@@ -33,7 +33,7 @@ public class ConfigLoader {
      * @throws RuntimeException if the file cannot be read
      */
     public synchronized void loadFromPropertiesFile(String fileName) {
-        try (InputStream in = new BufferedInputStream(new FileInputStream(fileName))) {
+        try (InputStream in = getClass().getClassLoader().getResourceAsStream("config.properties")) {
             properties.load(in);
         } catch (IOException e) {
             throw new RuntimeException("Failed to load configuration file: " + fileName, e);

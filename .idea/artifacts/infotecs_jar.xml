@@ -1,0 +1,12 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="infotecs:jar">
+    <output-path>$USER_HOME$/OneDrive/Рабочий стол</output-path>
+    <root id="archive" name="infotecs.jar">
+      <element id="module-output" name="infotecs" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/config.properties" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
